@@ -1,0 +1,12 @@
+	Monitooring /
+Paigaldada ja seadistada Nagios monitoorimistarkvara ja lisada 2 jälgitavat seadet (linux ja windows).
+ 
+Saata mulle Nagiose ekraanipilt, kus on näha sinu eesnime kandva linux masina ja perenime kandva windows masina töötav olek.
+
+
+
+
+	Apache V2 /
+https://wiki.itcollege.ee/index.php/Veebiserveri_labor_v.2
+ 
+Saata varundamisel tekkinud fail. e-postiga kristjan.kivikangur@tthk.ee
