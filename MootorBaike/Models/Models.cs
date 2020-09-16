@@ -12,5 +12,6 @@ namespace MootorBaike.Models
         protected string _Model { get; set; }
         private int _Topspeed { get; set; }
         private decimal _FuelType { get; set; }
+        protected string _Color { get; set; }
     }
 }
