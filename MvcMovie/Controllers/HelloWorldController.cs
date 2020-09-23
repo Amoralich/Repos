@@ -9,18 +9,20 @@ namespace MvcMovie.Controllers
 {
     public class HelloWorldController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is my default action...";
+            return View();
         }
+
         public string Welcome()
         {
             return "This is the Welcome action method...";
         }
+
         public string Lol(string name, int numTimes, int id)
         {
             return HtmlEncoder.Default.Encode($"ID : {id}:)  :D {name}, numTime is: {numTimes}");
-            
+
         }
     }
 }
