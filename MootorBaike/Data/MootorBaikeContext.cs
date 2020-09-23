@@ -13,6 +13,6 @@ namespace MootorBaike.Models
         {
         }
 
-        public DbSet<MootorBaike.Models.Models> Models { get; set; }
+        public DbSet<MootorBaike.Models.Model> Models { get; set; }
     }
 }

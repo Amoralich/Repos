@@ -18,7 +18,7 @@ namespace MootorBaike.Pages.Movies
             _context = context;
         }
 
-        public IList<Models> Models { get;set; }
+        public IList<Model> Models { get;set; }
 
         public async Task OnGetAsync()
         {

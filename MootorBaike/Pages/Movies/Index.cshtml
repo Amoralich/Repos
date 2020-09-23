@@ -1,18 +1,6 @@
 ﻿@page
 @model MootorBaike.Pages.Movies.IndexModel
 
-namespace RazorPagesMovie.Pages.Movies
-{
-    public class IndexModel : PageModel
-    {
-        private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
-
-        public IndexModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
-        {
-            _context = context;
-        }
-
-        public IList<Movie>
 
         @{
             ViewData["Title"] = "Index";
@@ -42,7 +30,7 @@ namespace RazorPagesMovie.Pages.Movies
                 </tr>
             </thead>
             <tbody>
-                @foreach(var item in Model.Models)
+                @foreach(var item in Model.Model)
                 {
                     <tr>
                         <td>
@@ -66,3 +54,4 @@ namespace RazorPagesMovie.Pages.Movies
                 }
             </tbody>
         </table>
+

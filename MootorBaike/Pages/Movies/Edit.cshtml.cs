@@ -20,7 +20,7 @@ namespace MootorBaike.Pages.Movies
         }
 
         [BindProperty]
-        public Models Models { get; set; }
+        public Model Models { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

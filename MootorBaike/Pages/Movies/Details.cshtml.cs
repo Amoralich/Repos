@@ -18,7 +18,7 @@ namespace MootorBaike.Pages.Movies
             _context = context;
         }
 
-        public Models Models { get; set; }
+        public Model Models { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
