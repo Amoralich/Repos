@@ -11,12 +11,22 @@ namespace MvcMovie.Controllers
     {
         public IActionResult Index()
         {
+            if(DateTime.Now.DayOfWeek == DayOfWeek.Tuesday)
+            {
+                ViewBag.greeting = "Good tuesday.";
+            }
+            else
+            {
+                ViewBag.greeting = "Good tuesday.";
+            }
             return View();
         }
 
-        public string Welcome()
+        public IActionResult Welcome(string name,int numTimes=1)
         {
-            return "This is the Welcome action method...";
+            ViewData["Message"] = "Hello" + name;
+            ViewData["Numtimes"] = numTimes;
+            return View();
         }
 
         public string Lol(string name, int numTimes, int id)
