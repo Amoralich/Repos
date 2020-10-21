@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using MVCAuto.Data;
 
 namespace MVCAuto
 {
@@ -24,6 +26,12 @@ namespace MVCAuto
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<MvcCarContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("MvcCarContext")));
+
+            services.AddDbContext<MVCAutoContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MVCAutoContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
