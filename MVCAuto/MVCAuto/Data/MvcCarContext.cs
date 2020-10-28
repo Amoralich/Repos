@@ -15,6 +15,6 @@ namespace MVCAuto.Data
 
         }
         
-        public DbSet<Car> cars { get; set; }
+        public DbSet<Car> Cars { get; set; }
     }
 }
