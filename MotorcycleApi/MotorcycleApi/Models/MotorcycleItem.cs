@@ -1,23 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TodoApi.Models
+namespace MotorcycleApi.Models
 {
-    public class TodoItem
+    public class MotorcycleItem
     {
         public long Id { get; set; }
-
-        [Required]
         public string Name { get; set; }
-
-        [DefaultValue(false)]
-        public bool IsComplete { get; set; }
-
-
+        public string Year { get; set; }
+        public string price { get; set; }
+        public string firm { get; set; }
+        public bool IsUsed { get; set; }
         public string Secret { get; set; }
     }
 }
